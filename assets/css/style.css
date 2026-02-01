@@ -202,7 +202,7 @@ body {
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px 20px;
   margin-bottom: 20px;
   padding: 15px;
 }
@@ -369,6 +369,9 @@ body {
   padding: 8px 0;
   color: #9a898a;
 }
+.mc-news-card__info {
+  flex: 1;
+}
 .mc-news-card__day {
   font-size: 20px;
   font-weight: 700;
@@ -411,6 +414,9 @@ body {
   font-weight: 600;
   height: 36px;
   background: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .mc-calendar__nav {
   width: 36px;
@@ -427,34 +433,37 @@ body {
 .mc-calendar__weekdays {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  margin-bottom: 8px;
   text-align: center;
   background-color: #f6f7f9;
 }
 .mc-calendar__weekday {
-  font-size: 12px;
+  font-size: 14px;
   color: #9ca3af;
   font-weight: 500;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .mc-calendar__body {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   justify-items: center;
-  gap: 10px;
 }
 .mc-calendar__week {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
+  width: 100%;
+  height: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 14px;
   cursor: pointer;
+  background: #f8f9fb;
+  color: #b7becc;
 }
 .mc-calendar__day {
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -723,7 +732,7 @@ body {
 @media (min-width: 0px) and (max-width: 992px) {
   .mc-task-container,
   .mc-calendar-container {
-    width: 50%;
+    width: 100%;
   }
   .mc-news-container {
     width: 100%;
@@ -731,6 +740,11 @@ body {
   .mc-calendar-container,
   .mc-news-docs-container {
     width: 100%;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .mc-header-search {
+    display: none;
   }
 }
 
