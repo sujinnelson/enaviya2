@@ -489,13 +489,18 @@ body {
         align-items: center;
         justify-content: space-between;
         margin-bottom: 16px;
-        background: #f3f4f6;
+        gap: 16px;
 
     }
 
     &__title {
         font-size: 16px;
+        flex: 1;
+        text-align: center;
+        border-radius: 8px;
         font-weight: 600;
+        height: 36px;
+        background: #f3f4f6;
     }
 
     &__nav {
@@ -513,9 +518,10 @@ body {
 
     &__weekdays {
         display: grid;
-        grid-template-columns: repeat(7, 1fr);
+        grid-template-columns: repeat(8, 1fr);
         margin-bottom: 8px;
         text-align: center;
+        background-color: #f6f7f9;
     }
 
     &__weekday {
@@ -531,9 +537,20 @@ body {
         gap: 10px;
     }
 
+    &__week {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
     &__day {
-        width: 36px;
-        height: 36px;
+        width: 45px;
+        height: 45px;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -850,6 +867,23 @@ body {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+
+    .mc-task-container,
+    .mc-calendar-container {
+        width: 50%;
+    }
+
+    .mc-news-container {
+        width: 100%;
+    }
+
+    .mc-calendar-container,
+    .mc-news-docs-container {
+        width: 100%;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 992px) {
 
     .mc-task-container,
     .mc-calendar-container {
