@@ -217,7 +217,7 @@ body {
 .mc-quick-links__item {
   background: #ffffff;
   border-radius: 14px;
-  padding: 30px 20px;
+  padding: 25px 20px;
   text-align: center;
   text-decoration: none;
   color: #333;
@@ -421,13 +421,13 @@ body {
   margin-top: 4px;
 }
 .mc-news-doc__icon--pdf {
-  background-image: url("../images/icons/pdf-svgrepo-com.svg");
+  background-image: url("../images/icons/pdf-svgrepo.svg");
 }
 .mc-news-doc__icon--word {
-  background-image: url("../images/word-icon.svg");
+  background-image: url("../images/icons/word-svgrepo.svg");
 }
 .mc-news-doc__icon--excel {
-  background-image: url("../images/excel-icon.svg");
+  background-image: url("../images/icons/file-excel-svgrepo.svg");
 }
 .mc-news-doc__info {
   max-width: 520px;

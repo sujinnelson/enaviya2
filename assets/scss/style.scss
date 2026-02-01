@@ -255,7 +255,7 @@ body {
     &__item {
         background: #ffffff;
         border-radius: 14px;
-        padding: 30px 20px;
+        padding: 25px 20px;
         text-align: center;
         text-decoration: none;
         color: #333;
@@ -511,15 +511,15 @@ body {
         margin-top: 4px;
 
         &--pdf {
-            background-image: url("../images/icons/pdf-svgrepo-com.svg");
+            background-image: url("../images/icons/pdf-svgrepo.svg");
         }
 
         &--word {
-            background-image: url("../images/word-icon.svg");
+            background-image: url("../images/icons/word-svgrepo.svg");
         }
 
         &--excel {
-            background-image: url("../images/excel-icon.svg");
+            background-image: url("../images/icons/file-excel-svgrepo.svg");
         }
     }
 
