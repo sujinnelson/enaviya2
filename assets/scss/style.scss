@@ -238,6 +238,7 @@ body {
 
 .card-container {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     margin-bottom: 20px;
     padding: 15px;
@@ -316,9 +317,6 @@ body {
     }
 }
 
-.mc-task-container {
-    flex: 1;
-}
 
 .mc-task {
 
@@ -388,17 +386,14 @@ body {
 
 }
 
-
-.mc-calendar-container {
-    flex: 1;
-}
-
 .mc-news-container {
-    flex: 2;
+    width: 65%;
 }
 
+.mc-task-container,
+.mc-calendar-container,
 .mc-news-docs-container {
-    flex: 1;
+    width: 33.33%;
 }
 
 .mc-news {
@@ -514,10 +509,6 @@ body {
             background-image: url("../images/icons/pdf-svgrepo.svg");
         }
 
-        &--word {
-            background-image: url("../images/icons/word-svgrepo.svg");
-        }
-
         &--excel {
             background-image: url("../images/icons/file-excel-svgrepo.svg");
         }
@@ -569,9 +560,6 @@ body {
         }
     }
 }
-
-
-
 
 .mc-card {
     display: flex;
@@ -751,9 +739,7 @@ body {
             text-align: center;
         }
     }
-}
 
-@media (max-width: 768px) {
     .mc-quick-links {
         &__grid {
             grid-template-columns: repeat(2, 1fr);
@@ -766,5 +752,20 @@ body {
         &__grid {
             grid-template-columns: 1fr;
         }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .mc-task-container,
+    .mc-calendar-container{
+        width: 50%;
+    }
+    .mc-news-container{
+        width: 100%;
+    }
+    .mc-calendar-container,
+    .mc-news-docs-container {
+        width: 100%;
     }
 }
