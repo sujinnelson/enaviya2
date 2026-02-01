@@ -234,70 +234,59 @@
                         <div class="mc-card-body">
                             <div class="mc-calendar">
                                 <div class="mc-calendar__header">
-                                    <button class="mc-calendar__nav">
-                                        <i class="fa-solid fa-arrow-left"></i>
-                                    </button>
-
-                                    <span class="mc-calendar__month">January 2026</span>
-
-                                    <button class="mc-calendar__nav">
-                                        <i class="fa-solid fa-arrow-right"></i>
-                                    </button>
+                                    <button class="mc-calendar__nav mc-calendar__nav--prev"><i
+                                            class="fa fa-arrow-left"></i></button>
+                                    <div class="mc-calendar__title">January 2026</div>
+                                    <button class="mc-calendar__nav mc-calendar__nav--next"><i
+                                            class="fa fa-arrow-right"></i></button>
                                 </div>
 
-                                <table class="mc-calendar__table">
-                                    <thead>
-                                        <tr>
-                                            <th>Mon</th>
-                                            <th>Tue</th>
-                                            <th>Wed</th>
-                                            <th>Thu</th>
-                                            <th>Fri</th>
-                                            <th>Sat</th>
-                                            <th>Sun</th>
-                                        </tr>
-                                    </thead>
+                                <div class="mc-calendar__weekdays">
+                                    <span class="mc-calendar__weekday">Mon</span>
+                                    <span class="mc-calendar__weekday">Tue</span>
+                                    <span class="mc-calendar__weekday">Wed</span>
+                                    <span class="mc-calendar__weekday">Thu</span>
+                                    <span class="mc-calendar__weekday">Fri</span>
+                                    <span class="mc-calendar__weekday">Sat</span>
+                                    <span class="mc-calendar__weekday">Sun</span>
+                                </div>
 
-                                    <tbody>
-                                        <tr>
-                                            <td class="is-muted">31</td>
-                                            <td>12</td>
-                                            <td>13</td>
-                                            <td>14</td>
-                                            <td class="is-active">15</td>
-                                            <td>16</td>
-                                            <td>17</td>
-                                        </tr>
-                                        <tr>
-                                            <td>18</td>
-                                            <td>19</td>
-                                            <td>20</td>
-                                            <td>21</td>
-                                            <td>22</td>
-                                            <td>23</td>
-                                            <td>24</td>
-                                        </tr>
-                                        <tr>
-                                            <td>25</td>
-                                            <td>26</td>
-                                            <td>27</td>
-                                            <td>28</td>
-                                            <td>29</td>
-                                            <td>30</td>
-                                            <td>31</td>
-                                        </tr>
-                                        <tr>
-                                            <td class="is-muted">01</td>
-                                            <td class="is-muted"></td>
-                                            <td class="is-muted"></td>
-                                            <td class="is-muted"></td>
-                                            <td class="is-muted"></td>
-                                            <td class="is-muted"></td>
-                                            <td class="is-muted"></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                <div class="mc-calendar__body">
+                                    <span class="mc-calendar__day mc-calendar__day--muted">31</span>
+                                    <span class="mc-calendar__day">12</span>
+                                    <span class="mc-calendar__day">13</span>
+                                    <span class="mc-calendar__day">14</span>
+                                    <span class="mc-calendar__day mc-calendar__day--active">15
+                                        <div class="mc-calendar__event">
+                                            <p class="mc-calendar__event-title">
+                                                Agile &amp; Scrum Fundamentals...
+                                            </p>
+                                            <p class="mc-calendar__event-time">
+                                                January 15 2026 - 10:00 - 12:00 PM
+                                            </p>
+                                        </div>
+                                    </span>
+                                    <span class="mc-calendar__day">16</span>
+                                    <span class="mc-calendar__day">17</span>
+                                    <span class="mc-calendar__day">18</span>
+                                    <span class="mc-calendar__day">19</span>
+                                    <span class="mc-calendar__day">20</span>
+                                    <span class="mc-calendar__day">21</span>
+                                    <span class="mc-calendar__day">22</span>
+                                    <span class="mc-calendar__day">23</span>
+                                    <span class="mc-calendar__day">24</span>
+                                    <span class="mc-calendar__day">25</span>
+
+                                    <span class="mc-calendar__day">26</span>
+                                    <span class="mc-calendar__day">27</span>
+                                    <span class="mc-calendar__day">28</span>
+                                    <span class="mc-calendar__day">29</span>
+                                    <span class="mc-calendar__day">30</span>
+                                    <span class="mc-calendar__day">31</span>
+                                    <span class="mc-calendar__day mc-calendar__day--muted">01</span>
+                                </div>
                             </div>
+
                         </div>
                     </div>
                 </div>
