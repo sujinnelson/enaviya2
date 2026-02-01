@@ -421,7 +421,7 @@ body {
   margin-top: 4px;
 }
 .mc-news-doc__icon--pdf {
-  background-image: url("../images/pdf-icon.svg");
+  background-image: url("../images/icons/pdf-svgrepo-com.svg");
 }
 .mc-news-doc__icon--word {
   background-image: url("../images/word-icon.svg");
