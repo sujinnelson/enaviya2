@@ -199,7 +199,7 @@ body {
   color: #fff;
 }
 
-.three-card-container {
+.card-container {
   display: flex;
   gap: 20px;
   margin-bottom: 20px;
@@ -212,7 +212,7 @@ body {
 .mc-quick-links__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 15px;
 }
 .mc-quick-links__item {
   background: #ffffff;
@@ -315,103 +315,158 @@ body {
   color: #c24141;
 }
 
-.mc-calendar {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
-  position: relative;
-}
-.mc-calendar__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 12px;
-  gap: 10px;
-}
-.mc-calendar__month {
-  font-weight: 600;
-  font-size: 14px;
-  flex: 1;
-  color: #374151;
-  height: 100%;
-  background: #f3f4f6;
-}
-.mc-calendar__nav {
-  width: 34px;
-  height: 34px;
-  border-radius: 8px;
-  border: none;
-  background: #f3f4f6;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.mc-calendar__nav i {
-  font-size: 14px;
-  color: #374151;
-}
-.mc-calendar__nav:hover {
-  background: #e5e7eb;
-}
-.mc-calendar__weekdays {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  text-align: center;
-  font-size: 12px;
-  color: #9ca3af;
-  margin-bottom: 8px;
-}
-.mc-calendar__grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  gap: 6px;
-}
-.mc-calendar__date {
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 13px;
-  border-radius: 50%;
-  color: #374151;
-  cursor: pointer;
-}
-.mc-calendar__date:hover {
-  background: #f3f4f6;
-}
-.mc-calendar__date--active {
-  background: #7a0000;
-  color: #ffffff;
-  font-weight: 600;
-}
-.mc-calendar__date--muted {
-  color: #cbd5e1;
-  cursor: default;
-}
-.mc-calendar__event {
-  margin-top: 14px;
-  padding: 10px 12px;
-  background: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  border-left: 4px solid #7a0000;
-}
-.mc-calendar__event-title {
-  font-size: 13px;
-  color: #111827;
-  display: block;
-  margin-bottom: 4px;
-}
-.mc-calendar__event-time {
-  font-size: 12px;
-  color: #6b7280;
-}
-
 .mc-calendar-container {
   flex: 1;
+}
+
+.mc-news-container {
+  flex: 2;
+}
+
+.mc-news-docs-container {
+  flex: 1;
+}
+
+.mc-news {
+  margin-top: 15px;
+}
+.mc-news__tabs {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.mc-news__tab {
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: #f2f2f2;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+.mc-news__tab--active {
+  background: #b30000;
+  color: #fff;
+}
+.mc-news__panel {
+  display: none;
+}
+.mc-news__panel--active {
+  display: block;
+}
+.mc-news__empty {
+  font-size: 14px;
+  color: #777;
+}
+.mc-news-card {
+  display: flex;
+  gap: 20px;
+  padding: 20px 0;
+  border-bottom: 1px dashed #ddd;
+}
+.mc-news-card:last-child {
+  border-bottom: none;
+}
+.mc-news-card__date {
+  width: 70px;
+  border: 1px solid #f2dad9;
+  border-radius: 10px;
+  text-align: center;
+  padding: 8px 0;
+  color: #9a898a;
+}
+.mc-news-card__day {
+  font-size: 20px;
+  font-weight: 700;
+  display: block;
+}
+.mc-news-card__month, .mc-news-card__year {
+  font-size: 12px;
+  display: block;
+}
+.mc-news-card__title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.mc-news-card__desc {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.mc-news-docs {
+  margin: 15px auto 0 auto;
+}
+
+.mc-news-doc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  border-bottom: 1px dashed #dcdcdc;
+}
+.mc-news-doc:last-child {
+  border-bottom: none;
+}
+.mc-news-doc__left {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.mc-news-doc__icon {
+  width: 32px;
+  height: 32px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 4px;
+}
+.mc-news-doc__icon--pdf {
+  background-image: url("../images/pdf-icon.svg");
+}
+.mc-news-doc__icon--word {
+  background-image: url("../images/word-icon.svg");
+}
+.mc-news-doc__icon--excel {
+  background-image: url("../images/excel-icon.svg");
+}
+.mc-news-doc__info {
+  max-width: 520px;
+}
+.mc-news-doc__title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #2c4a66;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+.mc-news-doc__date {
+  font-size: 13px;
+  color: #8a8a8a;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.mc-news-doc__actions {
+  display: flex;
+  gap: 10px;
+}
+.mc-news-doc__action {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: none;
+  background: #fdeee2;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mc-news-doc__action:hover {
+  background: #f7dcc8;
+}
+.mc-news-doc__action i {
+  font-size: 14px;
 }
 
 .mc-card {
